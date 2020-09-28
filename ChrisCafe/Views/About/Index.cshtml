@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+
+<div class="row about justify-content-md-center">
+    <div class="col-sm-12 col-md-6">
+        <h1><span>About Chris' Cafe</span></h1>
+        <p>Chris’ is a uniquely American comfort food influenced café. At Chris’, we believe that great food, great customer service and a fun environment make the dining experience unique. Using top quality ingredients and serving generous portions is our priority.</p>
+
+        <h2><span>Our Story</span></h2>
+        <p>At the age of thirteen, Chris began washing dishes for a restaurant his dad managed. Three years later he became a fry cook at the same restaurant. This was the beginning of his life-long passion with food and the restaurant industry.</p>
+        <p>Over the course of many years, Chris has worked as a meat cutter, food delivery driver, line cook, and a production manager in a USDA facility. In 2001 he opened his own foodservice brokerage where he represented over 35 food lines.  This gave him the opportunity to help other restaurant owners be successful.</p>
+        <p>In the spring of 2018 the dream to open a café presented itself. Chris decided to combine his passion of food, cars and motorcycles and open his own restaurant, Chris’ Café.</p>
+
+        <p class="font-italic">The story doesn’t stop here.</p>
+        <p>Christy, Chris’ wife, asked Chris to come up with a project to keep himself busy when he decided to close his brokerage in 2018. She thought this would entail Chris restoring another car. Much to her surprise, the project he chose was to open a restaurant. She knew this was always a dream he had but soon discovered that Chris wanted to make it a reality. Keep in mind that Christy’s only restaurant experience was the two weeks she lasted as a waitress in college. Chris drew up a solid business plan and convinced Christy that it was a good idea.</p>
+        <p>The restaurant was named Chris’ Café since the two owners are Chris and Christy. The doors opened in September of 2018 and the rest is a delicious history in the making.</p>
+    </div>
+
+    <div class="container-fluid col-sm-12 col-md-4">
+        <div class="row">
+            @await Html.PartialAsync("~/Views/Shared/Partials/ContactLocation.cshtml")
+        </div>
+        <div class="row social-links-standalone">
+            @await Html.PartialAsync("~/Views/Shared/Partials/SocialMediaIcons.cshtml")
+        </div>
+        <div class="row">
+            @await Html.PartialAsync("~/Views/Shared/Partials/Hours.cshtml")
+        </div>
+    </div>
+</div>

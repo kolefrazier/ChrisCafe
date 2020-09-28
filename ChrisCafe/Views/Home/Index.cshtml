@@ -1,0 +1,25 @@
+﻿@model ChrisCafe.Models.ViewModels.Notice;
+@{
+    ViewData["Title"] = "";
+}
+
+<div class="background">
+    <div class="takeout-only-notice">
+        @{ if (Model != null)
+            {
+                @await Html.PartialAsync("~/Views/Shared/Partials/Notices/Notice.cshtml", Model)
+            }
+        }
+        <h2>Our dining room is open!</h2>
+        <p>Our dining room is open! We are still open for take-out.</p>
+        <p>There are <a href="https://coronavirus-download.utah.gov/Health/Phased%20Health%20Guidelines%20V3.pdf#page=19">rules from the Health Department</a> that we all must follow to keep us all safe. Please understand and help us adhere to the new rules so we can stay open.</p>
+        <p>We are going back to normal business hours:</p>
+        <div class="top-pad">
+            @await Html.PartialAsync("~/Views/Shared/Partials/Hours.cshtml")
+        </div>
+        <div class="icon-align-helper phone">
+            <span class="icon size-14 phone"></span>
+            <a href="tel:8012921500"><span>(801) 292-1500</span></a>
+        </div>
+    </div>
+</div>

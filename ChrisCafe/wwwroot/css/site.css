@@ -1,0 +1,540 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+/*
+    ----- Colors -----
+    RichBlack       -   #080705
+    Gunmetal        -   #2D3142
+    Arsenic         -   #40434E
+    Platinum        -   #EAE1DF (bg color)
+    Sonic Silver    -   #85756E
+    Wine            -   #732C2C
+    Dark Sienna     -   #420C14
+    Smoky Topaz     -   #912F40
+    Brighter Yellow -   #F0E130
+
+    Wheat (Lighter Tint) - #fcf5e8
+    
+    Names: Gunmmetal, wheat, gold
+
+    Logo colors: 
+    Red Text: #9e1c20
+    Black Text: #0a0b0b
+    Smoke Effect: #818285
+    Skillet Outline: #231f20
+*/
+
+/* --- Colors --- */
+.yellow,
+.navOption.yellow a {
+    color: gold !important;
+}
+
+/* --- Icons --- */
+.icon {
+    min-width: 24px;
+    min-height: 24px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    white-space: nowrap;
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+    .icon.size-18 {
+        width: 18px;
+        height: 18px;
+        background-size: 18px;
+    }
+
+    .icon.size-32 {
+        width: 32px;
+        height: 32px;
+        background-size: 32px;
+    }
+    
+    .icon.size-40 {
+        width: 40px;
+        height: 40px;
+        background-size: 40px;
+    }
+
+    .icon.blank {
+        width: 24px;
+        height: 0;
+        background-image: none;
+        margin-right: 4px;
+    }
+
+        .icon.blank.blank-adjust {
+            margin-right: 4px;
+        }
+
+    .icon.none {
+        background-image: none;
+    }
+    .icon.menu {
+        background-image: url(../images/icons/menu.svg);
+    }
+
+    .icon.info {
+        background-image: url(../images/icons/info.svg);
+    }
+
+    .icon.menu-white {
+        background-image: url(../images/icons/menu_white.svg);
+    }
+
+    .icon.calendar {
+        background-image: url(../images/icons/calendar-month.svg);
+    }
+
+    .icon.clock {
+        background-image: url(../images/icons/clock.svg);
+    }
+
+    .icon.home {
+        background-image: url(../images/icons/home.svg);
+    }
+
+    .icon.location {
+        background-image: url(../images/icons/location.svg);
+    }
+
+    .icon.phone {
+        background-image: url(../images/icons/phone.svg);
+    }
+
+    .icon.email {
+        background-image: url(../images/icons/email.svg);
+    }
+
+    .icon.facebook {
+        background-image: url(../images/icons/facebook_material_filled.svg);
+    }
+
+    .icon.instagram {
+        background-image: url(../images/icons/instagram_material_filled.svg);
+    }
+
+    .icon.cornucopia {
+        background-image: url(../images/icons/cornucopia.webp);
+    }
+
+    .icon.turkey {
+        background-image: url(../images/icons/turkey.webp);
+    }
+
+    .icon.candy-cane {
+        background-image: url(../images/icons/candy-cane.webp);
+    }
+
+    .icon.christmas-tree {
+        background-image: url(../images/icons/christmas-tree.webp);
+    }
+
+    .icon.confetti {
+        background-image: url(../images/icons/confetti.webp);
+    }
+
+    .icon.fireworks {
+        background-image: url(../images/icons/fireworks.webp);
+    }
+
+    .icon.flagUSA {
+        background-image: url(../images/icons/usa-flag.webp);
+    }
+
+        .icon.flagUSA.left {
+            left: -8px;
+        }
+
+        .icon.flagUSA.right {
+            right: -8px;
+        }
+
+/* --- Document CSS --- */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EAE1DF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #231f20;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+    .no-gutters > .col,
+    .no-gutters > [class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+.social-links a {
+    margin-left: 8px;
+}
+
+.social-links-standalone {
+    margin: 16px 32px;
+}
+
+/* --- Global Bootstrap Overrides --- */
+ul,
+ul li {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+    ul li span.list-header {
+        font-size: 16px;
+        font-weight: bold;
+        padding-bottom: 2px;
+        border-bottom: 2px solid #9e1c20;
+    }
+
+    ul li.list-group-item {
+        padding: .25rem .6rem .25rem 1.25rem;
+    }
+
+        ul li.list-group-item div.icon-align-helper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        ul li.list-group-item span {
+            margin: auto 4px;
+        }
+
+    ul li ul {
+        margin-left: 32px;
+    }
+
+/* --- Nav Bar --- */
+nav.navbar {
+    font-size: 24px;
+    color: #fff;
+    background-color: #40434E;
+    border-bottom: 4px solid #9e1c20;
+}
+
+    /* --- Nav Options --- */
+    nav.navbar ul li.navOption {
+        margin: 0 16px;
+        text-align: center;
+    }
+
+        nav.navbar ul li.navOption a {
+            padding: 2px;
+            color: #fff;
+            text-align: center;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.25s;
+            -webkit-transition: border-bottom 0.25s;
+            -moz-transition: border-bottom 0.25s;
+            -o-transition: border-bottom 0.25s;
+        }
+
+            nav.navbar ul li.navOption a:hover {
+                text-decoration: none;
+                color: #fff;
+                border-bottom: 2px solid #9e1c20;
+            }
+
+        nav.navbar ul li.navOption.currentLocation a {
+            border-bottom: 2px solid #9e1c20;
+        }
+
+    /* --- Nav Toggler Button --- */
+    nav.navbar button.navbar-toggler {
+        border: 2px solid #fff;
+    }
+
+    /* --- Nav Logo --- */
+    nav.navbar .navLogo {
+        min-width: 128px;
+        width: auto;
+        max-width: 200px;
+        min-height: 100px;
+        height: auto;
+        max-height: 115px;
+    }
+
+    /* --- Bootstrap Overrides --- */
+    nav.navbar a.navbar-brand {
+        margin-right: 0;
+    }
+
+/* --- Body Content --- */
+/* --- Index --- */
+.body-content {
+    padding: 0;
+}
+
+    .body-content.top-bottom-margins {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .body-content .background {
+        background: url('/images/inside.webp') center center no-repeat;
+        background-size: cover;
+        width: inherit;
+        min-height: 73vh;
+        height: auto;
+    }
+
+    .body-content .about { /* Affects About and Contact&Locate pages. */
+        min-height: 68vh;
+        margin-left: 4px; /* To help with mobile view. */
+        margin-right: 4px;
+    }
+
+        .body-content .about h1 span,
+        .body-content .about h2 span {
+            padding: 0 4px 2px 4px;
+            margin-bottom: 4px;
+            border-bottom: 2px solid #9e1c20;
+        }
+
+.takeout-only-notice {
+    border: 4px solid white;
+    background-color: white;
+    opacity: .9;
+    padding: 20px 20%;
+}
+
+    .takeout-only-notice p {
+        margin-bottom: 0;
+    }
+
+    .takeout-only-notice .emphasis {
+        font-weight: bold;
+    }
+
+    .takeout-only-notice .top-pad {
+        padding-top: 16px;
+    }
+
+    .takeout-only-notice .icon-align-helper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+        .takeout-only-notice .icon-align-helper.phone {
+            flex-direction: row;
+            padding-top: 8px;
+            padding-left: 20px;
+        }
+            .takeout-only-notice .icon-align-helper.phone a {
+                margin-left: 8px;
+            }
+
+        .takeout-only-notice .icon-align-helper .icon {
+            margin-right: 8px;
+        }
+
+/* --- Footer --- */
+footer {
+    background-color: #EDC77D; /*#ecc16f;*/
+    padding-top: 8px;
+    padding-bottom: 39px;
+    overflow-y: hidden;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* --- Notice Box --- */
+.alert-container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.alert-container .alert-message {
+    align-self: center;
+}
+    .alert-message ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    .alert-message ul li {
+        padding: 0;
+    }
+
+.alert-container .icon {
+    margin: auto;
+}
+
+    .alert-container .icon.left {
+        margin-right: 24px;
+    }
+    .alert-container .icon.right {
+        margin-left: 24px;
+    }
+/* NOTE: HAS NOT BEEN UPDATED FOR BOOTSTRAP! */
+.notice {
+    background-color: white;
+    opacity: 0.9;
+}
+
+.menuNav .navCategory {
+    padding: 4px 2px 0 2px;
+    margin: 0 8px;
+    border-bottom: 2px solid #40434E;
+}
+
+    .menuNav .navCategory:hover {
+        cursor: pointer;
+    }
+
+/* --- Menu --- */
+/* NOTE: HAS NOT BEEN UPDATED FOR BOOTSTRAP! */
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    padding-top: 16px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+    .menu .menuNote {
+        font-style: italic;
+        align-self: center;
+    }
+
+    .menu .category {
+        display: flex;
+        align-self: center;
+        align-content: center;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        min-height: 24px;
+        height: 24px;
+        line-height: 24px;
+        font-size: 24px;
+        font-weight: 400;
+        padding: 0 2px 4px 2px;
+        margin: 8px 0;
+    }
+
+        .menu .category .categoryText {
+            display: inline-block;
+            width: auto;
+            text-align: center;
+            min-width: max-content; /* IE and Edge don't like this... Might need to find a workaround for those. */
+        }
+
+        .menu .category .bar {
+            display: inline-block;
+            width: 85%;
+            height: 4px;
+            background-color: #9e1c20;
+            outline: none;
+        }
+
+.bar.left {
+    margin: 12px 16px 12px 0;
+}
+
+.bar.right {
+    margin: 12px 0 12px 12px;
+}
+
+.menu .subCategoryContainer {
+    margin: 0 16px 24px 16px;
+}
+
+    .menu .subCategoryContainer.catering {
+        /*margin-bottom: 8px;*/
+    }
+    .menu .subCategoryContainer.reducedSpaceBottom {
+        margin-bottom: 8px;
+    }
+
+.menu .subCategory {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 4px;
+}
+
+    .menu .subCategory .subCategoryName {
+        padding: 0 2px;
+        /*margin-left: 2px;*/
+        border-bottom: solid 1px #40434E;
+    }
+
+    .menu .subCategory.noDescription {
+        padding-bottom: 4px;
+    }
+
+    .menu .subCategory.description {
+        margin-left: 16px;
+        padding-bottom: 4px;
+    }
+
+        .menu .subCategory.description .subCategoryDescription {
+            font-size: 14px;
+            font-style: italic;
+        }
+
+.menu .menuItem {
+    align-content: flex-start;
+    min-height: 18px;
+    height: auto;
+    font-size: 14px;
+    font-weight: normal;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    text-indent: -8px;
+    margin-top: 2px;
+    margin-left: 16px;
+}
+
+    .menu .menuItem.catering {
+        font-size: 16px;
+    }
+
+        .menu .menuItem.catering span {
+            margin-right: 24px;
+        }
+
+    .menu .menuItem .itemName {
+        font-weight: bold;
+        padding-bottom: 2px;
+        padding-right: 4px;
+    }
+
+    .menu .menuItem .itemPrice {
+        font-weight: bold;
+        padding: 0 6px;
+    }
+
+    .menu .menuItem .itemDescription {
+        font-style: italic;
+    }
+
+.menu .cateringItemPart {
+    margin-left: 24px;
+}
+
+    .menu .cateringItemPart span {
+        display: inline-block;
+        margin-right: 16px;
+        padding-left: 8px;
+        text-indent: -8px;
+    }
+
+/* --- About Page --- */
+/* --- Contact & Locate Page --- */

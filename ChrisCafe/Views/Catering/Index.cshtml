@@ -1,0 +1,61 @@
+﻿@using ChrisCafe.Models.Catering;
+@using ChrisCafe.Models.ViewModels;
+@model ChrisCafe.Models.Catering.CateringMenu
+@{
+    ViewData["Title"] = "Catering";
+}
+
+<div class="justify-content-md-center">
+    <div class="row justify-content-md-center" style="margin-right: 0;">
+        <div class="col col-sm-12 col-md-8 alert alert-primary text-center font-weight-bold" role="alert">
+            <p>We can cater your event!</p>
+            <p>Need a place to host an event? Reserve our building in the evening for your event!</p>
+        </div>
+    </div>
+</div>
+
+<div class="menu">
+    @foreach (CateringMenuCategory category in Model.MenuItems)
+    {
+        @if (category.MenuItems.Count == 0)
+        {
+            continue;
+        }
+        <div class="category">
+            <div class="bar left"></div>
+            <div class="categoryText">@category.Name</div>
+            <div class="bar right"></div>
+        </div>
+
+        @foreach (CateringMenuItem item in category.MenuItems)
+        {
+            <div class="subCategoryContainer catering @(@item.MenuItemParts.Count == 0 ? "reducedSpaceBottom" : "")">
+                <div class="menuItem catering">
+                    <span class="itemName">@item.Name</span>
+
+                    @if (!string.IsNullOrEmpty(item.ServingSize))
+                    {
+                        <span class="itemDescription">@item.ServingSize</span>
+                    }
+
+                    @if (item.Price.HasValue)
+                    {
+                        <span class="itemPrice">$@item.Price.Value.ToString("0.00")</span>
+                    }
+                </div>
+            
+
+                @foreach (CateringMenuItemParts part in item.MenuItemParts)
+                {
+                    <div class="cateringItemPart">
+                        <span>@part.Description</span>
+                        @if (part.Price.HasValue)
+                        {
+                            <span>$@part.Price.Value.ToString("0.00")</span>
+                        }
+                    </div>
+                }
+            </div>
+        }
+    }
+</div>

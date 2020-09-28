@@ -1,0 +1,84 @@
+[
+  // ----- DEBUG HOLIDAYS ------
+  //{ // Debug - Multiple Messages + XSS test
+  //  "Month": 12,
+  //  "Day": 29,
+  //  "StyleClass": "alert-success",
+  //  "Messages": [
+  //    "This is a test message!",
+  //    "This is another test message!",
+  //    "<script>alert('this is a malicious message')</script>"
+  //  ],
+  //  "IconLeft": "christmas-tree",
+  //  "IconRight": "candy-cane"
+  //  //"IconRight": "\"/><script>alert('this is a malicious message')</script>"
+  //},
+
+  // ----- Variable Date Holidays -----
+  // MLK Jr. Day
+  // Labor Day
+  // Thanksgiving & Black Friday
+
+  // ----- Consistent Date Holidays -----
+  { // Independence Day
+    "Month": 7,
+    "Day": 4,
+    "StyleClass": "alert-primary",
+    "Messages": [
+      "We are open Independence Day for our regular business hours!"
+    ],
+    "IconLeft": "flagUSA",
+    "IconRight": "fireworks"
+  },
+  { // Pioneer Day
+    "Month": 7,
+    "Day": 24,
+    "StyleClass": "alert-primary",
+    "Messages": [
+      "We are open Pioneer Day for our regular business hours!"
+    ],
+    "IconLeft": "flagUSA",
+    "IconRight": "fireworks"
+  },
+  { // Christmas Eve
+    "Month": 12,
+    "Day": 24,
+    "StyleClass": "alert-success",
+    "Messages": [
+      "We are open for our regular hours on Christmas Eve!",
+      "We will be closed Christmas Day to spend time with family. We will reopen on Dec. 26th."
+    ],
+    "IconLeft": "christmas-tree",
+    "IconRight": "candy-cane"
+  },
+  { // Christmas Day
+    "Month": 12,
+    "Day": 25,
+    "StyleClass": "alert-success",
+    "Messages": [
+      "We are closed Christmas Day to spend time with family. We will reopen on Dec. 26th."
+    ],
+    "IconLeft": "christmas-tree",
+    "IconRight": "candy-cane"
+  },
+  { // New Year's Eve
+    "Month": 12,
+    "Day": 31,
+    "StyleClass": "alert-success",
+    "Messages": [
+      "We are open for regular hours on New Year's Eve and New Year's Day!"
+    ],
+    "IconLeft": "fireworks",
+    "IconRight": "confetti"
+  },
+  { // New Year's Day
+    "Month": 1,
+    "Day": 1,
+    "StyleClass": "alert-success",
+    "Messages": [
+      "We are open for regular hours on New Year's Eve and New Year's Day!"
+    ],
+    "IconLeft": "fireworks",
+    "IconRight": "confetti"
+  }
+]

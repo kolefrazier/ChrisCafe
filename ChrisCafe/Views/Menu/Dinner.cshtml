@@ -1,0 +1,42 @@
+﻿@using ChrisCafe.Models;
+@using ChrisCafe.Models.ViewModels;
+@model ChrisCafe.Models.ViewModels.DinnerMenu;
+@{
+    ViewData["Title"] = "Dinner Menu";
+}
+    <div class="menu">
+        @await Html.PartialAsync("~/Views/Shared/Partials/GoodbyeDinner.cshtml")
+        <div class="menuNote">
+            <span>Only our dinner menu is available during dinner hours.</span>
+        </div>
+
+        <div class="category">
+            <div class="bar left"></div>
+            <div class="categoryText">Dinner</div>
+            <div class="bar right"></div>
+        </div>
+
+        @foreach (SubcategoryItem si in Model.Menu)
+        {
+            <div class="subCategoryContainer">
+                @if (!String.IsNullOrWhiteSpace(si.Description))
+                {
+                    <div class="subCategory"><span class="subCategoryName">@si.Name</span></div>
+                    <div class="subCategory description"><span class="subCategoryDescription">@si.Description</span></div>
+                }
+                else
+                {
+                    <div class="subCategory noDescription"><span class="subCategoryName">@si.Name</span></div>
+                }
+
+                @foreach (MenuItem mi in si.Items)
+                {
+                    <div class="menuItem">
+                        <span class="itemName">@mi.Name</span>
+                        <span class="itemPrice">$@mi.Price.ToString("0.00")</span>
+                        <span class="itemDescription">@mi.Description</span>
+                    </div>
+                }
+            </div>
+        }
+    </div>

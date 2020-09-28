@@ -1,0 +1,16 @@
+﻿@model ChrisCafe.Models.ViewModels.Notice;
+
+<div class="row justify-content-md-center" style="margin-right: 0;">
+    <div class="col col-sm-12 col-md-8 alert @Model.StyleClass text-center font-weight-bold alert-container" role="alert">
+        <span class="icon size-40 @Model.IconLeft left"></span>
+        <div class="alert-message">
+            <ul class="list-group alert-list">
+                @foreach (String s in Model.Messages)
+                {
+                    <li class="list-group-item">@s</li>
+                }
+            </ul>
+        </div>
+        <span class="icon size-32 @Model.IconRight right"></span>
+    </div>
+</div>
