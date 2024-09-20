@@ -4,8 +4,8 @@ for details on configuring this project to bundle and minify static web assets. 
     ----- Colors -----
     RichBlack       -   #080705
     Gunmetal        -   #2D3142
-    Arsenic         -   #40434E
-    Platinum        -   #EAE1DF (bg color)
+    Arsenic         -   #40434E - Nav
+    Platinum        -   #EAE1DF (bg color) - body background
     Sonic Silver    -   #85756E
     Wine            -   #732C2C
     Dark Sienna     -   #420C14
@@ -13,21 +13,21 @@ for details on configuring this project to bundle and minify static web assets. 
     Brighter Yellow -   #F0E130
 
     Wheat (Lighter Tint) - #fcf5e8
-    
-    Names: Gunmmetal, wheat, gold
+    Burlywood - #DEB887
+
+    Footer - Colors History (New->Old)
+    - #DEB887
+    - #EDC77D
+    - #ECC16F
 
     Logo colors: 
-    Red Text: #9e1c20
+    Red Text: #9e1c20 - Nav bottom-border, text underline
     Black Text: #0a0b0b
     Smoke Effect: #818285
     Skillet Outline: #231f20
 */
 
 /* --- Colors --- */
-.yellow,
-.navOption.yellow a {
-    color: gold !important;
-}
 
 /* --- Icons --- */
 .icon {
@@ -55,8 +55,8 @@ for details on configuring this project to bundle and minify static web assets. 
     }
     
     .icon.size-40 {
-        width: 40px;
-        height: 40px;
+        min-width: 40px;
+        min-height: 40px;
         background-size: 40px;
     }
 
@@ -71,88 +71,27 @@ for details on configuring this project to bundle and minify static web assets. 
             margin-right: 4px;
         }
 
-    .icon.none {
-        background-image: none;
-    }
-    .icon.menu {
-        background-image: url(../images/icons/menu.svg);
-    }
-
-    .icon.info {
-        background-image: url(../images/icons/info.svg);
-    }
-
-    .icon.menu-white {
-        background-image: url(../images/icons/menu_white.svg);
-    }
-
-    .icon.calendar {
-        background-image: url(../images/icons/calendar-month.svg);
-    }
-
-    .icon.clock {
-        background-image: url(../images/icons/clock.svg);
-    }
-
-    .icon.home {
-        background-image: url(../images/icons/home.svg);
-    }
-
-    .icon.location {
-        background-image: url(../images/icons/location.svg);
-    }
-
-    .icon.phone {
-        background-image: url(../images/icons/phone.svg);
-    }
-
-    .icon.email {
-        background-image: url(../images/icons/email.svg);
-    }
-
-    .icon.facebook {
-        background-image: url(../images/icons/facebook_material_filled.svg);
-    }
-
-    .icon.instagram {
-        background-image: url(../images/icons/instagram_material_filled.svg);
-    }
-
-    .icon.cornucopia {
-        background-image: url(../images/icons/cornucopia.webp);
-    }
-
-    .icon.turkey {
-        background-image: url(../images/icons/turkey.webp);
-    }
-
-    .icon.candy-cane {
-        background-image: url(../images/icons/candy-cane.webp);
-    }
-
-    .icon.christmas-tree {
-        background-image: url(../images/icons/christmas-tree.webp);
-    }
-
-    .icon.confetti {
-        background-image: url(../images/icons/confetti.webp);
-    }
-
-    .icon.fireworks {
-        background-image: url(../images/icons/fireworks.webp);
-    }
-
-    .icon.flagUSA {
-        background-image: url(../images/icons/usa-flag.webp);
-    }
-
-        .icon.flagUSA.left {
-            left: -8px;
-        }
-
-        .icon.flagUSA.right {
-            right: -8px;
-        }
+    .icon.none { background-image: none; }
+    .icon.menu { background-image: url(../images/icons/menu.svg); }
+    .icon.info { background-image: url(../images/icons/info.svg); }
+    .icon.menu-white { background-image: url(../images/icons/menu_white.svg); }
+    .icon.calendar { background-image: url(../images/icons/calendar-month.svg); }
+    .icon.clock { background-image: url(../images/icons/clock.svg); }
+    .icon.home { background-image: url(../images/icons/home.svg); }
+    .icon.location { background-image: url(../images/icons/location.svg); }
+    .icon.phone { background-image: url(../images/icons/phone.svg); }
+    .icon.email { background-image: url(../images/icons/email.svg); }
+    .icon.facebook { background-image: url(../images/icons/facebook_material_filled.svg); }
+    .icon.instagram { background-image: url(../images/icons/instagram_material_filled.svg); }
+    .icon.cornucopia { background-image: url(../images/icons/cornucopia.webp); }
+    .icon.turkey { background-image: url(../images/icons/turkey.webp); }
+    .icon.candy-cane { background-image: url(../images/icons/candy-cane.webp); }
+    .icon.christmas-tree { background-image: url(../images/icons/christmas-tree.webp); }
+    .icon.confetti { background-image: url(../images/icons/confetti.webp); }
+    .icon.fireworks { background-image: url(../images/icons/fireworks.webp); }
+    .icon.flagUSA { background-image: url(../images/icons/usa-flag.webp); }
+        .icon.flagUSA.left { left: -8px; }
+        .icon.flagUSA.right { right: -8px; }
 
 /* --- Document CSS --- */
 body {
@@ -227,26 +166,26 @@ nav.navbar {
     nav.navbar ul li.navOption {
         margin: 0 16px;
         text-align: center;
+        display: flex;
+        justify-content: center;
     }
 
         nav.navbar ul li.navOption a {
             padding: 2px;
             color: #fff;
             text-align: center;
+            text-decoration: none;
             border-bottom: 2px solid transparent;
             transition: border-bottom 0.25s;
             -webkit-transition: border-bottom 0.25s;
             -moz-transition: border-bottom 0.25s;
             -o-transition: border-bottom 0.25s;
+            margin: auto 0;
         }
 
-            nav.navbar ul li.navOption a:hover {
-                text-decoration: none;
-                color: #fff;
-                border-bottom: 2px solid #9e1c20;
-            }
-
-        nav.navbar ul li.navOption.currentLocation a {
+        nav.navbar ul li.navOption.currentLocation a,
+        nav.navbar ul li.navOption a:hover {
+            color: #fff;
             border-bottom: 2px solid #9e1c20;
         }
 
@@ -266,8 +205,13 @@ nav.navbar {
     }
 
     /* --- Bootstrap Overrides --- */
+    nav.navbar .navbar-brand-container {
+        margin-right: 16px;
+    }
     nav.navbar a.navbar-brand {
-        margin-right: 0;
+        font-size: 28px;
+        color: #fff;
+        margin: auto 0;
     }
 
 /* --- Body Content --- */
@@ -341,7 +285,8 @@ nav.navbar {
 
 /* --- Footer --- */
 footer {
-    background-color: #EDC77D; /*#ecc16f;*/
+    background-color: #deb887; /*#EDC77D;*/ /*#ecc16f;*/
+    border-top: 2px solid #40434E;
     padding-top: 8px;
     padding-bottom: 39px;
     overflow-y: hidden;
@@ -402,7 +347,6 @@ footer {
     flex-basis: 75%;
     flex-wrap: nowrap;
     align-content: flex-start;
-    padding-top: 16px;
     margin: 0 auto;
     width: 95%;
 }
@@ -415,24 +359,21 @@ footer {
     .menu .category {
         display: flex;
         align-self: center;
-        align-content: center;
+        align-content: flex-start;
         justify-content: space-between;
         flex-direction: row;
         width: 100%;
         min-height: 24px;
-        height: 24px;
-        line-height: 24px;
         font-size: 24px;
         font-weight: 400;
-        padding: 0 2px 4px 2px;
+        padding: 0 2px 4px 8px;
         margin: 8px 0;
+        border-bottom: 4px solid #9e1c20;
     }
 
-        .menu .category .categoryText {
+        .menu .category .categoryTitle {
             display: inline-block;
-            width: auto;
             text-align: center;
-            min-width: max-content; /* IE and Edge don't like this... Might need to find a workaround for those. */
         }
 
         .menu .category .bar {
@@ -452,7 +393,7 @@ footer {
 }
 
 .menu .subCategoryContainer {
-    margin: 0 16px 24px 16px;
+    margin: 0 16px 24px 8px;
 }
 
     .menu .subCategoryContainer.catering {
@@ -469,25 +410,16 @@ footer {
     padding-top: 4px;
 }
 
-    .menu .subCategory .subCategoryName {
-        padding: 0 2px;
-        /*margin-left: 2px;*/
-        border-bottom: solid 1px #40434E;
-    }
-
     .menu .subCategory.noDescription {
         padding-bottom: 4px;
     }
 
     .menu .subCategory.description {
-        margin-left: 16px;
+        margin-left: 8px;
         padding-bottom: 4px;
+        font-size: 14px;
+        font-style: italic;
     }
-
-        .menu .subCategory.description .subCategoryDescription {
-            font-size: 14px;
-            font-style: italic;
-        }
 
 .menu .menuItem {
     align-content: flex-start;
@@ -495,11 +427,7 @@ footer {
     height: auto;
     font-size: 14px;
     font-weight: normal;
-    padding-bottom: 4px;
-    padding-left: 8px;
-    text-indent: -8px;
-    margin-top: 2px;
-    margin-left: 16px;
+    margin: 2px 0 8px 8px;
 }
 
     .menu .menuItem.catering {

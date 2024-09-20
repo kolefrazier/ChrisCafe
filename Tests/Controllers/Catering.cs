@@ -10,7 +10,7 @@ namespace ChrisCafeTests.Controllers
     public class Catering
     {
         [TestMethod]
-        public void Catering_Index_ReturnsViewResult()
+        public void ReturnsIndexViewResult()
         {
             // Arrange
             var Controller = new ChrisCafe.Controllers.AboutController();
@@ -23,7 +23,7 @@ namespace ChrisCafeTests.Controllers
         }
 
         [TestMethod]
-        public void Catering_Index_SetsCurrentPage()
+        public void SetsCurrentPageIndex()
         {
             var Controller = new ChrisCafe.Controllers.CateringController();
             var Result = Controller.Index() as ViewResult;

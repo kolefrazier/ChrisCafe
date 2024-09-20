@@ -1,0 +1,170 @@
+[
+  {
+    "SubcategoryId": 1,
+    "Name": "Breakfast Combinations",
+    "Description": "Substitute toast or English muffin with a scone or pancake for $1.99 (#1 and #6 only).",
+    "SortPosition": 1,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 2,
+    "Name": "Dinners",
+    "Description": "Served with a house roll.",
+    "SortPosition": 2,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 3,
+    "Name": "Dinner Salads",
+    "Description": "Served with a house roll. Dressings: Ranch, Blue Cheese, Thousand Island, Caesar or Oriental Sesame Asian.",
+    "SortPosition": 1,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 5,
+    "Name": "Lunch Kids Menu",
+    "Description": "Substitute fries with onion rings or tots $1.99 or substitute small salad for fries $2.99.",
+    "SortPosition": 6,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 6,
+    "Name": "Dessert",
+    "Description": null,
+    "SortPosition": 5,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 7,
+    "Name": "Sides",
+    "Description": null,
+    "SortPosition": 4,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 8,
+    "Name": "Salads",
+    "Description": null,
+    "SortPosition": 3,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 9,
+    "Name": "Dinner Sandwiches",
+    "Description": "Served with fries.",
+    "SortPosition": 3,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 10,
+    "Name": "Sandwiches",
+    "Description": "Served with fries. Substitute fries with onion rings or tots $1.99 or substitute small salad for fries 2.99.",
+    "SortPosition": 2,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 11,
+    "Name": "Beverages",
+    "Description": null,
+    "SortPosition": 8,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 12,
+    "Name": "Breakfast Kids Menu",
+    "Description": null,
+    "SortPosition": 7,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 13,
+    "Name": "Breakfast Extras",
+    "Description": null,
+    "SortPosition": 6,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 14,
+    "Name": "Meat Lovers",
+    "Description": null,
+    "SortPosition": 5,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 15,
+    "Name": "Breakfast Sandwiches",
+    "Description": "Served with hash browns.",
+    "SortPosition": 4,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 16,
+    "Name": "Pancakes & French Toast",
+    "Description": "Served with real butter and warm maple syrup.",
+    "SortPosition": 3,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 17,
+    "Name": "Omelets & Scrambles",
+    "Description": "Substitute toast or English muffin with a scone or pancake for $1.50.",
+    "SortPosition": 2,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 18,
+    "Name": "Burgers",
+    "Description": "Served with lettuce, tomato, onion, pickles and fries. Substitute fries with onion rings or tots $1.99. Make any burger a double for an additional $4.99",
+    "SortPosition": 1,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 19,
+    "Name": "Dinner Kids' Menu",
+    "Description": "",
+    "SortPosition": 4,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 20,
+    "Name": "Catering Breakfast",
+    "Description": null,
+    "SortPosition": 1,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 21,
+    "Name": "Catering Lunch",
+    "Description": null,
+    "SortPosition": 2,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 22,
+    "Name": "Catering Salads",
+    "Description": null,
+    "SortPosition": 3,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 23,
+    "Name": "Catering Soups",
+    "Description": null,
+    "SortPosition": 4,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 24,
+    "Name": "Catering Dessert",
+    "Description": null,
+    "SortPosition": 5,
+    "MenuItems": null
+  },
+  {
+    "SubcategoryId": 25,
+    "Name": "Catering Drinks",
+    "Description": null,
+    "SortPosition": 6,
+    "MenuItems": null
+  }
+]

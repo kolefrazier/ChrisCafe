@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using ChrisCafe.Data;
+﻿using Microsoft.AspNetCore.Mvc;
+using ChrisCafe.Data.Caches;
 
 namespace ChrisCafe.Controllers
 {
@@ -15,11 +11,9 @@ namespace ChrisCafe.Controllers
             return View(Cache.CateringMenu.Menu);
         }
 
-        #region Helper Methods
         private void SetCurrentPage(string state)
         {
             ViewData["CurrentPage"] = state;
         }
-        #endregion 
     }
 }

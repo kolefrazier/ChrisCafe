@@ -40,6 +40,27 @@
     "IconLeft": "flagUSA",
     "IconRight": "fireworks"
   },
+  { // Thanksgiving 2023 - Don't forget to update Black Friday, as well!
+    "Month": 11,
+    "Day": 23,
+    "StyleClass": "alert-primary",
+    "Messages": [
+      "We will be closed on Thanksgiving to spend time with family.",
+      "Join us on Friday during our regular hours! 6:30 AM - 2:00 PM"
+    ],
+    "IconLeft": "turkey",
+    "IconRight": "cornucopia"
+  },
+  { // Black Friday 2022
+    "Month": 11,
+    "Day": 24,
+    "StyleClass": "alert-primary",
+    "Messages": [
+      "We are open today for our regular hours! 6:30 AM - 2:00 PM"
+    ],
+    "IconLeft": "",
+    "IconRight": ""
+  },
   { // Christmas Eve
     "Month": 12,
     "Day": 24,
@@ -64,7 +85,7 @@
   { // New Year's Eve
     "Month": 12,
     "Day": 31,
-    "StyleClass": "alert-success",
+    "StyleClass": "alert-primary",
     "Messages": [
       "We are open for regular hours on New Year's Eve and New Year's Day!"
     ],
@@ -74,7 +95,7 @@
   { // New Year's Day
     "Month": 1,
     "Day": 1,
-    "StyleClass": "alert-success",
+    "StyleClass": "alert-primary",
     "Messages": [
       "We are open for regular hours on New Year's Eve and New Year's Day!"
     ],

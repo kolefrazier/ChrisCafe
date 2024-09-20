@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ChrisCafe.Models;
 using ChrisCafe.Models.ViewModels;
-using ChrisCafe.Data;
+using ChrisCafe.Data.Caches;
 
 namespace ChrisCafe.Controllers
 {
@@ -27,15 +27,18 @@ namespace ChrisCafe.Controllers
                 case ("breakfast"):
                     MenuResponse.ShowBreakfast = true;
                     MenuResponse.ShowLunch = false;
+                    MenuResponse.ShowBeverages = true;
                     break;
                 case ("Lunch"):
                 case ("lunch"):
                     MenuResponse.ShowBreakfast = false;
                     MenuResponse.ShowLunch = true;
+                    MenuResponse.ShowBeverages = true;
                     break;
                 default:
                     MenuResponse.ShowBreakfast = true;
                     MenuResponse.ShowLunch = true;
+                    MenuResponse.ShowBeverages = true;
                     break;
             }
 

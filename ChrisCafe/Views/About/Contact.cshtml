@@ -4,12 +4,9 @@
 
 <div class="row about justify-content-md-center">
     <div class="col-sm-12 col-md-6">
-        <div class="container">
-            <div class="mapDimensions">
-                <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJAcXEoyQDU4cRI6yWHOkCsQ0&key=AIzaSyCeeDJynikbWCUceyFQxAUnirKCT8El3dA" allowfullscreen></iframe>
-            </div>
-            <p>You can find us on Antelope Drive, just East of Main Street in Clearfield.<br />Parking is available all around our building.</p>
-        </div>
+        @* A 100% with a static 400 feels jank, but it works. The 100% seems to work, regardless of VS's warning on that property. *@
+        <iframe width="100%" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJAcXEoyQDU4cRI6yWHOkCsQ0&key=AIzaSyCeeDJynikbWCUceyFQxAUnirKCT8El3dA" allowfullscreen></iframe>
+        <p>You can find us on Antelope Drive, just East of Main Street in Clearfield.<br />Parking is available all around our building.</p>
     </div>
 
     <div class="container-fluid col-sm-12 col-md-4">

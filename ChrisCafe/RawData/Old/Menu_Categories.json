@@ -1,0 +1,32 @@
+[
+  {
+    "CategoryId": 1,
+    "Name": "Breakfast",
+    "Description": null,
+    "MenuItems": null
+  },
+  {
+    "CategoryId": 2,
+    "Name": "Lunch",
+    "Description": null,
+    "MenuItems": null
+  },
+  {
+    "CategoryId": 3,
+    "Name": "Dinner",
+    "Description": null,
+    "MenuItems": null
+  },
+  {
+    "CategoryId": 4,
+    "Name": "Catering",
+    "Description": null,
+    "MenuItems": null
+  },
+  {
+    "CategoryId": 5,
+    "Name": "Beverages",
+    "Description": null,
+    "MenuItems": null
+  }
+]

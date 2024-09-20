@@ -1,0 +1,44 @@
+[
+  {
+    "MenuItemId": 47,
+    "CategoryId": 1,
+    "SubcategoryId": 14,
+    "FlagsId": 0,
+    "Name": "Country Fried Steak",
+    "Description": "With two eggs, hash browns, toast and country gravy.",
+    "DescriptionShort": null,
+    "Price": 14.59,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 1,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  },
+  {
+    "MenuItemId": 66,
+    "CategoryId": 1,
+    "SubcategoryId": 14,
+    "FlagsId": 0,
+    "Name": "Steak and Eggs",
+    "Description": "Choice top sirloin steak, two eggs, hash browns, and toast.",
+    "DescriptionShort": null,
+    "Price": 16.99,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 2,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  },
+  {
+    "MenuItemId": 97,
+    "CategoryId": 1,
+    "SubcategoryId": 14,
+    "FlagsId": 0,
+    "Name": "Loco Moco",
+    "Description": "Hash browns, 1/3 patty, caramelized onions, and two fried eggs all smothered in brown or country gravy. Served with toast.",
+    "DescriptionShort": null,
+    "Price": 14.59,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 3,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  }
+]

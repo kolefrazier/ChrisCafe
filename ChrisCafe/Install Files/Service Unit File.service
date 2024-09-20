@@ -1,0 +1,16 @@
+﻿[Unit]
+Description=ChrisCafe dotnet app
+
+[Service]
+#WorkingDirectory=/var/www/chriscafe.net/
+WorkingDirectory=/var/www/chriscafe.net/
+ExecStart=/usr/bin/dotnet /var/www/chriscafe.net/ChrisCafe.dll
+Restart=always
+RestartSec=10
+SyslogIdentifier=chriscafe
+User=kole
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+
+[Install]
+WantedBy=multi-user.target

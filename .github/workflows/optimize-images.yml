@@ -1,15 +1,22 @@
 # Optimize Images action, sourced from: https://css-tricks.com/optimize-images-with-a-github-action/
+# GitHub Marketplace: https://github.com/marketplace/actions/image-actions
 name: Optimize Images
-on: pull_request
+on:
+  pull_request:
+    paths:
+      - '**.jpg'
+      - '**.jpeg'
+      - '**.png'
+      # - '**.webp' Excluse webp, working on the assumption that any webp image is already optimized
 jobs:
   build:
     name: calibreapp/image-actions
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@master
+        uses: actions/checkout@main
 
       - name: Compress Images
-        uses: calibreapp/image-actions@master
+        uses: calibreapp/image-actions@main
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}

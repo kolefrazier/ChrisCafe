@@ -10,7 +10,7 @@ namespace ChrisCafeTests.Controllers
     public class About
     {
         [TestMethod]
-        public void About_Index_ReturnsViewResult()
+        public void ReturnsIndexViewResult()
         {
             // Arrange
             var Controller = new ChrisCafe.Controllers.AboutController();
@@ -23,7 +23,7 @@ namespace ChrisCafeTests.Controllers
         }
 
         [TestMethod]
-        public void About_Index_SetsCurrentPage()
+        public void SetsCurrentPageIndex()
         {
             var Controller = new ChrisCafe.Controllers.AboutController();
             var Result = Controller.Index() as ViewResult;
@@ -31,7 +31,7 @@ namespace ChrisCafeTests.Controllers
         }
 
         [TestMethod]
-        public void About_Contact_ReturnsViewResult()
+        public void ReturnsContactViewResult()
         {
             var Controller = new ChrisCafe.Controllers.AboutController();
             var Result = Controller.Contact();
@@ -39,7 +39,7 @@ namespace ChrisCafeTests.Controllers
         }
 
         [TestMethod]
-        public void About_Contact_SetsCurrentPage()
+        public void SetsCurrentPageContact()
         {
             var Controller = new ChrisCafe.Controllers.AboutController();
             var Result = Controller.Contact() as ViewResult;

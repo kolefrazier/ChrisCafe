@@ -1,0 +1,27 @@
+﻿check host host_ping_chriscafe with address "chriscafe.net"
+  if failed
+    ping
+    for 2 cycles
+  then alert
+  group chriscafe
+  mode passive
+
+check host https_index_chriscafe with address "chriscafe.net"
+  if failed
+    port 443
+    protocol https
+    request "/"
+    for 2 cycles
+  then alert
+  group chriscafe
+  mode passive
+
+check host ssl_cert_renewal_chriscafe with address "chriscafe.net"
+  if failed
+    port 443
+    protocol https
+    and certificate valid > 10 days
+    for 5 cycles
+  then alert
+  group chriscafe
+  mode passive

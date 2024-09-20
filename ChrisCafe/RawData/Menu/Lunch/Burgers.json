@@ -1,0 +1,72 @@
+[
+  {
+    "MenuItemId": 73,
+    "CategoryId": 2,
+    "SubcategoryId": 18,
+    "FlagsId": 0,
+    "Name": "Hamburger",
+    "Description": "1/3-pound patty. $10.99 with cheddar, swiss, pepper jack or provolone cheese.",
+    "DescriptionShort": null,
+    "Price": 10.19,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 1,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  },
+  {
+    "MenuItemId": 71,
+    "CategoryId": 2,
+    "SubcategoryId": 18,
+    "FlagsId": 0,
+    "Name": "Bacon Burger",
+    "Description": "1/3-pound patty and bacon. $11.99 with cheddar, swiss, pepper jack or provolone cheese.",
+    "DescriptionShort": null,
+    "Price": 11.59,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 2,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  },
+  {
+    "MenuItemId": 70,
+    "CategoryId": 2,
+    "SubcategoryId": 18,
+    "FlagsId": 0,
+    "Name": "Mushroom and Swiss Burger",
+    "Description": "Heaped with sautéed onions and mushrooms.",
+    "DescriptionShort": null,
+    "Price": 11.99,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 3,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  },
+  {
+    "MenuItemId": 46,
+    "CategoryId": 2,
+    "SubcategoryId": 18,
+    "FlagsId": 0,
+    "Name": "Hot Burger",
+    "Description": "1/3-pound patty with sautéed onions on a toasted bun, generously covered with brown gravy. $11.59 with gravy on fries.",
+    "DescriptionShort": null,
+    "Price": 10.59,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 4,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  },
+  {
+    "MenuItemId": 98,
+    "CategoryId": 2,
+    "SubcategoryId": 18,
+    "FlagsId": 0,
+    "Name": "Manhatten Burger",
+    "Description": "1/3-pound patty topped with caramelized onions, roast beef, cheddar cheese and served with Au Jus for dipping.",
+    "DescriptionShort": null,
+    "Price": 13.29,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 5,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  }
+]

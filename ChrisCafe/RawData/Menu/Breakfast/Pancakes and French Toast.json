@@ -1,0 +1,58 @@
+[
+  {
+    "MenuItemId": 53,
+    "CategoryId": 1,
+    "SubcategoryId": 16,
+    "FlagsId": 0,
+    "Name": "The Stack (Three)",
+    "Description": "Traditional cakes or our signature banana cakes.",
+    "DescriptionShort": null,
+    "Price": 6.99,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 1,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  },
+  {
+    "MenuItemId": 52,
+    "CategoryId": 1,
+    "SubcategoryId": 16,
+    "FlagsId": 0,
+    "Name": "Short Stack (2)",
+    "Description": "Traditional cakes or our signature banana cakes.",
+    "DescriptionShort": null,
+    "Price": 5.99,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 2,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  },
+  {
+    "MenuItemId": 51,
+    "CategoryId": 1,
+    "SubcategoryId": 16,
+    "FlagsId": 0,
+    "Name": "Shorty (1)",
+    "Description": "Traditional cakes or our signature banana cakes.",
+    "DescriptionShort": null,
+    "Price": 3.99,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 3,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  },
+  {
+    "MenuItemId": 50,
+    "CategoryId": 1,
+    "SubcategoryId": 16,
+    "FlagsId": 0,
+    "Name": "Thick-Cut French Toast",
+    "Description": "Sprinkled with cinnamon.",
+    "DescriptionShort": null,
+    "Price": 7.59,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 4,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  }
+]

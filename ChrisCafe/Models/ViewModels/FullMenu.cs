@@ -7,14 +7,27 @@ namespace ChrisCafe.Models.ViewModels
 {
     public class FullMenu
     {
-        ////public List<MenuItem> MenuItems { get; set; }
-        //public List<MenuItem> BreakfastMenuItems { get; set; }
-        //public List<MenuItem> LunchMenuItems { get; set; }
-        public List<SubcategoryItem> BreakfastMenu { get; set; }
-        public List<SubcategoryItem> LunchMenu { get; set; }
+        public FullMenu()
+        {
+            BreakfastMenu = new MenuCategoryContainer()
+            {
+                Name = "Breakfast"
+            };
+            LunchMenu = new MenuCategoryContainer()
+            {
+                Name = "Lunch"
+            };
+            BeveragesMenu = new MenuCategoryContainer()
+            {
+                Name = "Beverages"
+            };
+        }
+
+        public MenuCategoryContainer BreakfastMenu { get; set; }
+        public MenuCategoryContainer LunchMenu { get; set; }
+        public MenuCategoryContainer BeveragesMenu { get; set; }
         public bool ShowBreakfast { get; set; }
         public bool ShowLunch { get; set; }
-
-        
+        public bool ShowBeverages { get; set; }
     }
 }

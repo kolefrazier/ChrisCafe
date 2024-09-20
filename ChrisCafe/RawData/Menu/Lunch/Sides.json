@@ -1,0 +1,58 @@
+[
+  {
+    "MenuItemId": 5,
+    "CategoryId": 2,
+    "SubcategoryId": 7,
+    "FlagsId": 0,
+    "Name": "Bowl of Soup",
+    "Description": "",
+    "DescriptionShort": null,
+    "Price": 4.59,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 1,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  },
+  {
+    "MenuItemId": 4,
+    "CategoryId": 2,
+    "SubcategoryId": 7,
+    "FlagsId": 0,
+    "Name": "Cup of Soup",
+    "Description": "",
+    "DescriptionShort": null,
+    "Price": 3.5,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 2,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  },
+  {
+    "MenuItemId": 3,
+    "CategoryId": 2,
+    "SubcategoryId": 7,
+    "FlagsId": 0,
+    "Name": "French Fries",
+    "Description": "",
+    "DescriptionShort": null,
+    "Price": 2.5,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 3,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  },
+  {
+    "MenuItemId": 2,
+    "CategoryId": 2,
+    "SubcategoryId": 7,
+    "FlagsId": 0,
+    "Name": "Onion Rings or Tots",
+    "Description": "",
+    "DescriptionShort": null,
+    "Price": 3.0,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 4,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  }
+]

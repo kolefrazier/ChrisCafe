@@ -1,0 +1,44 @@
+[
+  {
+    "MenuItemId": 79,
+    "CategoryId": 1,
+    "SubcategoryId": 12,
+    "FlagsId": 0,
+    "Name": "One Pancake",
+    "Description": "Traditional cake or our signature banana cake, with bacon or sausage.",
+    "DescriptionShort": null,
+    "Price": 5.99,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 1,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  },
+  {
+    "MenuItemId": 78,
+    "CategoryId": 1,
+    "SubcategoryId": 12,
+    "FlagsId": 0,
+    "Name": "One Thick-Cut French Toast",
+    "Description": "With bacon or sausage.",
+    "DescriptionShort": null,
+    "Price": 5.99,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 2,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  },
+  {
+    "MenuItemId": 92,
+    "CategoryId": 1,
+    "SubcategoryId": 12,
+    "FlagsId": 0,
+    "Name": "Kid's Special",
+    "Description": "One egg, hash browns, bacon, or sausage.",
+    "DescriptionShort": null,
+    "Price": 6.59,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 3,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  }
+]

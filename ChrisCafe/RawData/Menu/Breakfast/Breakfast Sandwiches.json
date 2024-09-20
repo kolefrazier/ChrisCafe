@@ -1,0 +1,44 @@
+[
+  {
+    "MenuItemId": 49,
+    "CategoryId": 1,
+    "SubcategoryId": 15,
+    "FlagsId": 0,
+    "Name": "English Muffin Sandwich",
+    "Description": "With egg, cheddar cheese, and ham, bacon, or sausage.",
+    "DescriptionShort": null,
+    "Price": 9.39,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 1,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  },
+  {
+    "MenuItemId": 49,
+    "CategoryId": 1,
+    "SubcategoryId": 15,
+    "FlagsId": 0,
+    "Name": "Croissasnt Breakfast Sandwich",
+    "Description": "With egg, cheddar cheese, and ham, bacon, or sausage.",
+    "DescriptionShort": null,
+    "Price": 10.29,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 2,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  },
+  {
+    "MenuItemId": 48,
+    "CategoryId": 1,
+    "SubcategoryId": 15,
+    "FlagsId": 0,
+    "Name": "Breakfast Burrito",
+    "Description": "Two eggs, hash browns, cheese, onions and green chilies rolled in a flour tortilla with salsa on the side. Add ham, bacon or sausage $1.00.",
+    "DescriptionShort": null,
+    "Price": 9.29,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 3,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  }
+]

@@ -10,7 +10,7 @@ namespace ChrisCafeTests.Controllers
     public class Menu
     {
         [TestMethod]
-        public void Menu_Index_ReturnsViewResult()
+        public void ReturnsIndexViewResult()
         {
             // Arrange
             var Controller = new ChrisCafe.Controllers.MenuController();
@@ -23,7 +23,7 @@ namespace ChrisCafeTests.Controllers
         }
 
         [TestMethod]
-        public void Menu_Index_SetsCurrentPage()
+        public void SetsCurrentPageIndex()
         {
             var Controller = new ChrisCafe.Controllers.MenuController();
             var Result = Controller.Index(String.Empty) as ViewResult;
@@ -31,7 +31,7 @@ namespace ChrisCafeTests.Controllers
         }
 
         [TestMethod]
-        public void Menu_Dinner_RedirectsToHomeIndex()
+        public void RedirectsDinnerToHomeIndex()
         {
             var Controller = new ChrisCafe.Controllers.MenuController();
             var Result = Controller.Dinner() as RedirectToActionResult;

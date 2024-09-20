@@ -1,0 +1,78 @@
+# References:
+# github.ref_name: https://github.com/orgs/community/discussions/26686
+# Create release action (ncipollo/release-action@v1): https://github.com/ncipollo/release-action
+# Checkouts do not persist across jobs: https://github.com/actions/checkout/issues/19
+
+# Standards and such:
+# Tag names: Use yyyymmdd(.n) format. eg release-20231225, release-20231225.1
+
+name: Tagged Release
+on:
+  push:
+    tags:
+        - 'test-*'
+        - 'release-*' 
+jobs:
+  pre-release:
+    name: Pre-Release
+    runs-on: ubuntu-latest
+    steps:
+    # Checkout and setup
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup dotnet
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '6.x'
+
+    - name: Cache NuGet Packages
+      uses: actions/cache@v3
+      env:
+        cache-name: nuget-package-cache
+      with:
+        path: ~/.nuget/packages
+        key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
+        restore-keys: |
+            ${{ runner.os }}-nuget
+
+    # Test
+    - name: Test
+      run: dotnet test --no-restore --verbosity normal
+  release:
+    name: Release
+    needs: 'pre-release'
+    if: startsWith(github.ref, 'refs/tags/release')
+    runs-on: ubuntu-latest
+    steps:
+    # Checkout and setup
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup dotnet
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '6.x'
+
+    - name: Cache NuGet Packages
+      uses: actions/cache@v3
+      env:
+        cache-name: nuget-package-cache
+      with:
+        path: ~/.nuget/packages
+        key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
+        restore-keys: |
+            ${{ runner.os }}-nuget
+
+    # Build and Publish
+    - name: Build release
+      run: |
+        dotnet publish ChrisCafe -c Release -o publish/
+        cd publish # Zip from this dir to prevent unnecessary folders in the zipped output. (And without odd side effects from zip's args)
+        zip -r ../chriscafe-${{ github.ref_name }}.zip *
+
+    - name: Create Release
+      uses: ncipollo/release-action@v1
+      with:
+        artifacts: chriscafe-${{ github.ref_name }}.zip
+        makeLatest: true

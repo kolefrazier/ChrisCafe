@@ -16,67 +16,16 @@
 
     @if (Model.ShowBreakfast)
     {
-        <div class="category">
-            <div class="bar left"></div>
-            <div class="categoryText">Breakfast</div>
-            <div class="bar right"></div>
-        </div>
-
-        @foreach (SubcategoryItem si in Model.BreakfastMenu)
-        {
-            <div class="subCategoryContainer">
-                @if (!String.IsNullOrWhiteSpace(si.Description))
-                {
-                    <div class="subCategory"><span class="subCategoryName">@si.Name</span></div>
-                    <div class="subCategory description"><span class="subCategoryDescription">@si.Description</span></div>
-                }
-                else
-                {
-                    <div class="subCategory noDescription"><span class="subCategoryName">@si.Name</span></div>
-                }
-
-                @foreach (MenuItem mi in si.Items)
-                {
-                    <div class="menuItem">
-                        <span class="itemName">@mi.Name</span>
-                        <span class="itemPrice">$@mi.Price.ToString("0.00")</span>
-                        <span class="itemDescription">@mi.Description</span>
-                    </div>
-                }
-            </div>
-        }
+        @await Html.PartialAsync("_MenuCategory.cshtml", Model.BreakfastMenu)
     }
 
     @if (Model.ShowLunch)
     {
-        <div class="category">
-            <div class="bar left"></div>
-            <div class="categoryText">Lunch</div>
-            <div class="bar right"></div>
-        </div>
+        @await Html.PartialAsync("_MenuCategory.cshtml", Model.LunchMenu)
+    }
 
-        @foreach (SubcategoryItem si in Model.LunchMenu)
-        {
-            <div class="subCategoryContainer">
-                @if (!String.IsNullOrWhiteSpace(si.Description))
-                {
-                    <div class="subCategory"><span class="subCategoryName">@si.Name</span></div>
-                    <div class="subCategory description"><span class="subCategoryDescription">@si.Description</span></div>
-                }
-                else
-                {
-                    <div class="subCategory noDescription"><span class="subCategoryName">@si.Name</span></div>
-                }
-
-                @foreach (MenuItem mi in si.Items)
-                {
-                    <div class="menuItem">
-                        <span class="itemName">@mi.Name</span>
-                        <span class="itemPrice">$@mi.Price.ToString("0.00")</span>
-                        <span class="itemDescription">@mi.Description</span>
-                    </div>
-                }
-            </div>
-        }
+    @if (Model.ShowBeverages)
+    {
+        @await Html.PartialAsync("_MenuCategory.cshtml", Model.BeveragesMenu)
     }
 </div>

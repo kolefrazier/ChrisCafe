@@ -1,0 +1,17 @@
+﻿@model ChrisCafe.Models.ViewModels.ReportsListing;
+@{
+    ViewData["Title"] = "Traffic Reports";
+}
+
+<div class="row about justify-content-md-center">
+    <div class="col-sm-12 col-md-6">
+        <h1><span>Traffic Reports</span></h1>
+
+        <ul>
+            @foreach (string file in Model.Files)
+            {
+                <li><a href="https://ga.chriscafe.net/@file">@file</a></li>
+            }
+        </ul>
+    </div>
+</div>

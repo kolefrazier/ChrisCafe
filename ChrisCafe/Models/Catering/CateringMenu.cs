@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using ChrisCafe.Data;
+﻿using ChrisCafe.Data.Caches;
+using ChrisCafe.Data.Factories;
 
 namespace ChrisCafe.Models.Catering
 {
@@ -15,7 +12,7 @@ namespace ChrisCafe.Models.Catering
         //Constructor
         public CateringMenu()
         {
-            Categories = ChrisCafe.Data.Cache.CateringMenu.Categories;
+            Categories = CateringMenuFactory.Categories;
             MenuItems = new List<CateringMenuCategory>();
         }
     }

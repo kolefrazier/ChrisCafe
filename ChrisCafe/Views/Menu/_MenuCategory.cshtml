@@ -1,0 +1,31 @@
+﻿@using ChrisCafe.Models;
+@using ChrisCafe.Models.ViewModels;
+@model ChrisCafe.Models.ViewModels.MenuCategoryContainer;
+
+<div class="category">
+    <div class="categoryTitle">@Model.Name</div>
+</div>
+
+@foreach (SubcategoryItem si in Model.Items)
+{
+    <div class="subCategoryContainer">
+        @if (!String.IsNullOrWhiteSpace(si.Description))
+        {
+            <div class="subCategory"><span class="subCategoryName">@si.Name</span></div>
+            <div class="subCategory description">@si.Description</div>
+        }
+        else
+        {
+            <div class="subCategory noDescription"><span class="subCategoryName">@si.Name</span></div>
+        }
+
+        @foreach (MenuItem mi in si.Items)
+        {
+            <div class="menuItem">
+                <span class="itemName">@mi.Name</span>
+                <span class="itemPrice">$@mi.Price.ToString("0.00")</span>
+                <span class="itemDescription">@mi.Description</span>
+            </div>
+        }
+    </div>
+}

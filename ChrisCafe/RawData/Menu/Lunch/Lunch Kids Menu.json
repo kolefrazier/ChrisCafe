@@ -1,0 +1,58 @@
+[
+  {
+    "MenuItemId": 22,
+    "CategoryId": 2,
+    "SubcategoryId": 5,
+    "FlagsId": 0,
+    "Name": "Grilled Cheese Sandwich and Fries",
+    "Description": "",
+    "DescriptionShort": null,
+    "Price": 5.95,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 1,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  },
+  {
+    "MenuItemId": 42,
+    "CategoryId": 2,
+    "SubcategoryId": 5,
+    "FlagsId": 0,
+    "Name": "Beef Corn Dog and Fries",
+    "Description": "",
+    "DescriptionShort": null,
+    "Price": 5.95,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 2,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  },
+  {
+    "MenuItemId": 94,
+    "CategoryId": 2,
+    "SubcategoryId": 5,
+    "FlagsId": 0,
+    "Name": "Two Chicken Tenders and Fries",
+    "Description": "",
+    "DescriptionShort": null,
+    "Price": 6.99,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 3,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  },
+  {
+    "MenuItemId": 103,
+    "CategoryId": 2,
+    "SubcategoryId": 5,
+    "FlagsId": 0,
+    "Name": "Burger with Cheese and Fries",
+    "Description": "1/4-pound burger served on a ciabatta bun.",
+    "DescriptionShort": null,
+    "Price": 6.99,
+    "SecondPrice": 0.0,
+    "DisplayOrder": 3,
+    "DateAdded": "0001-01-01T00:00:00",
+    "DateLastModified": "0001-01-01T00:00:00"
+  }
+]

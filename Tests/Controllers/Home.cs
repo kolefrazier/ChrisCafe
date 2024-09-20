@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using ChrisCafe.Data.Providers;
+﻿using ChrisCafe.Providers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -11,7 +8,7 @@ namespace ChrisCafeTests.Controllers
     public class Home
     {
         [TestMethod]
-        public void Home_Index_ReturnsViewResult()
+        public void ReturnsIndexViewResult()
         {
             // Arrange
             var Controller = new ChrisCafe.Controllers.HomeController(new DateTimeProvider());
@@ -24,7 +21,7 @@ namespace ChrisCafeTests.Controllers
         }
 
         [TestMethod]
-        public void Home_Index_SetsCurrentPage()
+        public void SetsCurrentPageIndex()
         {
             var Controller = new ChrisCafe.Controllers.HomeController(new DateTimeProvider());
             var Result = Controller.Index() as ViewResult;
